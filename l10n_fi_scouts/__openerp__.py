@@ -4,6 +4,7 @@
 {
     'name': 'Finnish template for local scout groups',
     'version': '9.0.0.1.0',
+    'author': 'Aviapartio ry. / Eino Mäkitalo',
     'category': 'Localization/Account Charts',
     'description': """
 Example chart of account template for local scout group
