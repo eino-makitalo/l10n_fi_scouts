@@ -15,9 +15,9 @@
       <field name="transfer_account_id" ref="a120" />
     </record>
     <record id="a120" model="account.account.template">
-      <field name="chart_template_id" ref="finnish_scouting_chart_template"/>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
     </record>
-    <!--<record id="a100" model="account.account.template">
+    <record id="a100" model="account.account.template">
       <field name="code">100</field>
       <field name="name">Kassa</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
@@ -28,7 +28,7 @@
       <field name="name">Pankki</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_liquidity" />
-    </record>-->
+    </record>
     <record id="a102" model="account.account.template">
       <field name="code">102</field>
       <field name="name">Myyntisaamiset</field>
@@ -84,6 +84,12 @@
       <field name="name">Siirtovelat</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_current_liabilities" />
+    </record>
+    <record id="a206" model="account.account.template">
+      <field name="code">206</field>
+      <field name="name">Kolovaraus</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_non_current_liabilities" />
     </record>
     <record id="a310" model="account.account.template">
       <field name="code">310</field>
@@ -159,12 +165,36 @@
     </record>
     <record id="a550" model="account.account.template">
       <field name="code">550</field>
-      <field name="name">Joulukalenterimyynti</field>
+      <field name="name">Jäsenmaksut</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_revenue" />
     </record>
     <record id="a551" model="account.account.template">
       <field name="code">551</field>
+      <field name="name">Liittymismaksut</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_revenue" />
+    </record>
+    <record id="a552" model="account.account.template">
+      <field name="code">552</field>
+      <field name="name">Kannatusjäsenmaksut</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_revenue" />
+    </record>
+    <record id="a553" model="account.account.template">
+      <field name="code">553</field>
+      <field name="name">Lahjoitukset</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_revenue" />
+    </record>
+    <record id="a555" model="account.account.template">
+      <field name="code">555</field>
+      <field name="name">Joulukalenterimyynti</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_revenue" />
+    </record>
+    <record id="a556" model="account.account.template">
+      <field name="code">556</field>
       <field name="name">Tulot tempauksista</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_revenue" />
@@ -201,37 +231,37 @@
     </record>
     <record id="a400" model="account.account.template">
       <field name="code">400</field>
-      <field name="name">Menot lpk:n kokouksista</field>
+      <field name="name">Kokouskulut - lippukunnan yhteiset</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
     <record id="a401" model="account.account.template">
       <field name="code">401</field>
-      <field name="name">Menot sudenpentujen kokouksista</field>
+      <field name="name">Viikkokokousten kulut  ja tarvikkeet - sudenpennut</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
     <record id="a402" model="account.account.template">
       <field name="code">402</field>
-      <field name="name">Menot seikkailijoiden kokouksista</field>
+      <field name="name">Viikkokokousten kulut  ja tarvikkeet - seikkailijat</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
     <record id="a403" model="account.account.template">
       <field name="code">403</field>
-      <field name="name">Menot tarpojien kokouksista</field>
+      <field name="name">Viikkokokousten kulut ja tarvikkeet - tarpojat</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
     <record id="a404" model="account.account.template">
       <field name="code">404</field>
-      <field name="name">Menot samoajien kokouksista</field>
+      <field name="name">Viikkokokousten kulut ja tarvikkeet - samoajat</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
     <record id="a405" model="account.account.template">
       <field name="code">405</field>
-      <field name="name">Menot vaeltajien kokouksista</field>
+      <field name="name">Viikkokokousten kulut ja tarvikkeet - vaeltajat</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
@@ -321,7 +351,7 @@
     </record>
     <record id="a450" model="account.account.template">
       <field name="code">450</field>
-      <field name="name">Menot toimistotarvikkeista</field>
+      <field name="name">Toimistotarvikkeet</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
@@ -333,7 +363,7 @@
     </record>
     <record id="a452" model="account.account.template">
       <field name="code">452</field>
-      <field name="name">Menot kolosta</field>
+      <field name="name">Kolo ja kokoontumistilan menot</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
@@ -357,7 +387,7 @@
     </record>
     <record id="a456" model="account.account.template">
       <field name="code">456</field>
-      <field name="name">Menot toimintatarvikkeista</field>
+      <field name="name">Puhelin ja nettikulut</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
@@ -367,14 +397,50 @@
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
+    <record id="a461" model="account.account.template">
+      <field name="code">461</field>
+      <field name="name">Suoritusmerkit ja suorituskirjat  -sudenpennut</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
+    <record id="a462" model="account.account.template">
+      <field name="code">462</field>
+      <field name="name">Suoritusmerkit  ja suoritusmateriaali -  seikkailijat</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
+    <record id="a463" model="account.account.template">
+      <field name="code">463</field>
+      <field name="name">Suoritusmerkit ja suoritusmateriaali - tarpojat</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
+    <record id="a464" model="account.account.template">
+      <field name="code">464</field>
+      <field name="name">Suoritusmerkit ja suoritusmateriaali - samoajat</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
+    <record id="a465" model="account.account.template">
+      <field name="code">465</field>
+      <field name="name">Suoritusmerkit ja suoritusmateriaali - vaeltajat</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
     <record id="a500" model="account.account.template">
       <field name="code">500</field>
+      <field name="name">Sidosryhmien (SP, Päpa etc) palvelumaksut</field>
+      <field name="chart_template_id" ref="finnish_scouting_chart_template" />
+      <field name="user_type_id" ref="account.data_account_type_expenses" />
+    </record>
+    <record id="a505" model="account.account.template">
+      <field name="code">505</field>
       <field name="name">Menot joulukalenterimyynneistä</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />
     </record>
-    <record id="a501" model="account.account.template">
-      <field name="code">501</field>
+    <record id="a506" model="account.account.template">
+      <field name="code">506</field>
       <field name="name">Menot tempauksista</field>
       <field name="chart_template_id" ref="finnish_scouting_chart_template" />
       <field name="user_type_id" ref="account.data_account_type_expenses" />

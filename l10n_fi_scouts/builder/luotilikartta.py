@@ -24,6 +24,7 @@ def field(parent,name,value,ref=None,xeval=None):
         x.text=value
     return x
 
+
 #<record id="austria_chart_template" model="account.chart.template">
 #    <field name="name">Finland - Local Scout Group Accounting</field>
 #    <field name="code_digits">4</field>
@@ -79,8 +80,10 @@ for rivi in open('tilikartta.csv','r',encoding='iso8859-1'):
             frec=field(acc1,'reconcile',None,xeval='True')
         if trasferaccount:
             domainrec(code);
+            acc2=record(data,'a'+code)
+            fid=field(acc2,'chart_template_id',None,ref=TEMPLATEID)
 
         
 ET.dump(root)
 tree= ET.ElementTree(element=root)
-tree.write(r"C:\P\odoo\addons\l10n_fi_scouts\account_chart.xml",encoding="utf-8",xml_declaration=True)
+tree.write(r"..\account_chart.xml",encoding="utf-8",xml_declaration=True)

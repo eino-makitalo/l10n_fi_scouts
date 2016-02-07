@@ -1,9 +1,9 @@
-﻿# -*- encoding: utf-8 -*-
+# -*- encoding: utf-8 -*-
 # (C) Eino Mäkitalo, Aviapartio ry.  MIT License or LGPL if you like.
 # Based on voluntary work.
 {
     'name': 'Finnish template for local scout groups',
-    'version': '9.0.0.1.0',
+    'version': '9.0.0.1.1',
     'author': 'Aviapartio ry. / Eino Mäkitalo',
     'category': 'Localization/Account Charts',
     'description': """
