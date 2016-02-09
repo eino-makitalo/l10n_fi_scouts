@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_fi_scouts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-09 11:56+0200\n"
+"PO-Revision-Date: 2016-02-09 12:01+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Language: fi\n"
+
+#. module: l10n_fi_scouts
+#: model:ir.ui.view,arch_db:l10n_fi_scouts.partner_view_buttons
+msgid "1000000001"
+msgstr "1000000001"
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,help:l10n_fi_scouts.field_res_partner_ref_number
+msgid "Fixed reference number for member to pay some extra payments for scout group"
+msgstr "Kiinteä viitenumero partiolaiselle satunnaisille maksuille"
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_member_id
+msgid "Member id"
+msgstr "Jäsennumero"
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,help:l10n_fi_scouts.field_res_partner_member_id
+msgid "Member id from Kuksa-system (or customer id for non-scouts)"
+msgstr "Jäsennumero Kuksasta (ei-partiolaisella asiakasnumero)"
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:51
+#, python-format
+msgid "Ref number can be max 20 digits"
+msgstr "Viitenumero on max. 20 numeroa."
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:57
+#, python-format
+msgid "Ref number is invalid last digit (checksum) is %d but it should be %d"
+msgstr "Viimeinen nro %d on väärin (tarkiste). Oikea tarkiste on %d"
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:60
+#, python-format
+msgid "Ref number must be only digits and spaces"
+msgstr "Viitenumerossa voi olla vain numeroita. (välilyönnit sallitaan)"
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_ref_number
+msgid "Reference Number"
+msgstr "Viitenumero"
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_ref_number_clean
+msgid "Reference Number without any space"
+msgstr "Viitenumero ilman välilyöntejä"
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:48
+#, python-format
+msgid "Too short ref number. Smallest possible is 13 (last digit is checksum)"
+msgstr "Viitenumero vähintään 2 numeroa. Pienin viite on 13. (viitteessä on aina tarkistemerkki viimeisenä)s"
+
+#. module: l10n_fi_scouts
+#: model:ir.model,name:l10n_fi_scouts.model_wizard_multi_charts_accounts
+msgid "wizard.multi.charts.accounts"
+msgstr "wizard.multi.charts.accounts"

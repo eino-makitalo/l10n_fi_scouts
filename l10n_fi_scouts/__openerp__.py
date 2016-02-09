@@ -3,7 +3,7 @@
 # Based on voluntary work.
 {
     'name': 'Finnish template for local scout groups',
-    'version': '9.0.0.1.1',
+    'version': '0.1.2',
     'author': 'Aviapartio ry. / Eino Mäkitalo',
     'category': 'Localization/Account Charts',
     'description': """
@@ -14,6 +14,8 @@ without tax issues. This template is planned to use with Aviapartio ry.
 See more information about Finnish scouting and account issues from 
 http://purkki.partio.fi
 
+We also add one field for partner (Customer/Vendor) - member_id
+
     """,
     'depends': [
         'account', 
@@ -21,10 +23,12 @@ http://purkki.partio.fi
     ],
     'data': [
         'account_chart.xml', 
-        'account_chart_template.yml'
+        'account_chart_template.yml',
+        "partner_view.xml"
     ],
     'test': [],
     'demo': [],
     'auto_install': False,
     'installable': True,
+    'sequence':100,
 }

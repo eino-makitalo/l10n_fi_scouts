@@ -10,8 +10,8 @@ Finnish
 Odoo 9.0  - Tilikartta suomalaiselle partiolippukunnalle
 ========================================================
 
-Hei, m‰ vasta harjoittelen mutta t‰ss‰ ei ole mit‰‰n verojuttuja viel‰
-Kts. http://purkki.partio.fi... sielt‰ hain pohjia ja sovelsin t‰h‰n.
+Hei m√§ vasta harjoittelen joten t√§ss√§ ei ole mit√§√§n verojuttuja viel√§.
+Kts. http://purkki.partio.fi... sielt√§ hain ja sovelsin
 
-eino.makitalo  att‰merkki aviapartio.fi
+eino.makitalo  att√§merkki aviapartio.fi
 

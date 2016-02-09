@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<odoo>
+  <record model="ir.ui.view" id="partner_view_buttons">
+            <field name="name">partner.view.buttons</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="priority" eval="20"/>
+            <field name="groups_id" eval="[(4, ref('account.group_account_invoice'))]"/>
+            <field name="arch" type="xml">
+            <xpath expr='//field[@name="website"]' position='after'>
+                <field name="member_id" placeholder="1000000001" />
+            </xpath>
+            <xpath expr='//field[@name="ref"]' position='after'>
+                <field name="ref_number"/>
+            </xpath>
+            </field>
+  </record>
+</odoo>

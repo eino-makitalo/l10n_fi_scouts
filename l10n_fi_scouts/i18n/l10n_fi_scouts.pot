@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_fi_scouts
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-02-09 12:02+0200\n"
+"PO-Revision-Date: 2016-02-09 09:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.8.7\n"
+
+#. module: l10n_fi_scouts
+#: model:ir.ui.view,arch_db:l10n_fi_scouts.partner_view_buttons
+msgid "1000000001"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,help:l10n_fi_scouts.field_res_partner_ref_number
+msgid "Fixed reference number for member to pay some extra payments for scout group"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_member_id
+msgid "Member id"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,help:l10n_fi_scouts.field_res_partner_member_id
+msgid "Member id from Kuksa-system (or customer id for non-scouts)"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:51
+#, python-format
+msgid "Ref number can be max 20 digits"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:57
+#, python-format
+msgid "Ref number is invalid last digit (checksum) is %d but it should be %d"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:60
+#, python-format
+msgid "Ref number must be only digits and spaces"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_ref_number
+msgid "Reference Number"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model.fields,field_description:l10n_fi_scouts.field_res_partner_ref_number_clean
+msgid "Reference Number without any space"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: code:addons/l10n_fi_scouts/partner.py:48
+#, python-format
+msgid "Too short ref number. Smallest possible is 13 (last digit is checksum)"
+msgstr ""
+
+#. module: l10n_fi_scouts
+#: model:ir.model,name:l10n_fi_scouts.model_wizard_multi_charts_accounts
+msgid "wizard.multi.charts.accounts"
+msgstr ""
