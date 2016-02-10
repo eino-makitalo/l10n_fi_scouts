@@ -24,7 +24,8 @@ We also add one field for partner (Customer/Vendor) - member_id
     'data': [
         'account_chart.xml', 
         'account_chart_template.yml',
-        "partner_view.xml"
+        "view/partner_view.xml",
+        'view/account_invoice.xml'
     ],
     'test': [],
     'demo': [],
