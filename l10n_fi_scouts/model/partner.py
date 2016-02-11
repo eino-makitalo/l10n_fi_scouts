@@ -17,6 +17,11 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     member_id = fields.Char(string="Member id",help="Member id from Kuksa-system (or customer id for non-scouts)")
+
+    _sql_constraints = [
+        ('kuksa_member_id_must_be_unique', 'unique(member_id)', 'Member number must be unique'),
+    ]       
+
     # copy code - ugly start
     def _formatref(callback,val01):
         if val01:
@@ -77,5 +82,6 @@ class ResPartner(models.Model):
     )
 
     # copy code - ugly end
+    
 
 1
