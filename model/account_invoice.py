@@ -20,7 +20,7 @@ class AccountInvoice(models.Model):
     def _justnumbers(self):
         for record in self:
             if record.kuksa_number:
-                record.kuksa_int==  int("0" +''.join(c for c in "abc123def456" if c.isdigit()))
+                record.kuksa_int  = int("0" +''.join(c for c in "abc123def456" if c.isdigit()))
     
     kuksa_int=fields.Integer(string="Kuksa",help="Kuksa invoice number 0=if not in Kuksa",compute=_justnumbers)
 
