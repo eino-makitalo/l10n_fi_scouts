@@ -3,7 +3,7 @@
 # Based on voluntary work.
 {
     'name': 'Finnish template for local scout groups',
-    'version': '0.1.3',
+    'version': '0.1.4',
     'author': 'Aviapartio ry. / Eino Mäkitalo',
     'category': 'Localization/Account Charts',
     'description': """
